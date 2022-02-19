@@ -1,0 +1,138 @@
+<html>
+
+<head>
+    <style>
+        * {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h2 {
+            color: red;
+        }
+
+        nav {
+            background-color: white;
+            overflow: hidden;
+        }
+
+        nav a {
+            display: block;
+            float: left;
+            padding: 10px;
+
+            color: #333;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        header,
+        footer {
+            text-align: center;
+        }
+
+        div {
+            text-align: center;
+            margin-bottom: 0px;
+        }
+
+        footer {
+            background-color: red;
+            color: red;
+            border: 2px solid;
+            padding: 20px 10px 30px 10px;
+        }
+
+        nav a:hover {
+            background-color: lightgray;
+        }
+
+        main {
+            margin-bottom: 30px;
+        }
+
+        img {
+            border-radius: 5px;
+        }
+
+        .img-container {
+        width: 33.3%;
+        float: right;
+        padding: 10px;
+        /* margin-left: 20%; */
+    }
+
+        #center {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .clearfix {
+        overflow: hidden;
+    }
+
+    .clearfix::after {
+        clear: both;
+    }
+
+    .img-container img {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 550px) {
+        .img-container {
+            width: 100%;
+            float: none;
+            padding: 10px 0px 10px 0px;
+        }
+
+        #center {
+            width: 100%;
+        }
+
+        nav a {
+            width: 100%;
+            float: none !important;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <hr>
+    <div>
+        <h2>LEONARDO DA VINCI</h2>
+    </div>
+    <header>
+        <nav>
+            <a>Math</a>
+            <a>Art</a>
+            <a>Astronomy</a>
+            <a style="float: right;">Wiki</a>
+            <a style="float: right;">Inventoions</a>
+            <a style="float: right;">Anatomy</a>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <p1>"Learning never exhausts the mind."</p1>
+
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto asperiores molestias veritatis. Nam ullam unde nisi atque aliquid minus commodi, eius aliquam doloremque iste eaque, itaque repudiandae sunt quasi dolorem?</p>
+        <div class="clearfix">
+            <div id="center">
+                <div class="img-container" style="float: left; margin-left: 0px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Lady_with_an_Ermine_-_Leonardo_da_Vinci_-_Google_Art_Project.jpg/1024px-Lady_with_an_Ermine_-_Leonardo_da_Vinci_-_Google_Art_Project.jpg">
+                </div>
+                <div class="img-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/1024px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" >
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a>READ MORE ON WIKI</a>
+    </footer>
+</body>
+
+</html>
